@@ -1,1 +1,3 @@
+AWS - VPC Simple Deployment
+
 This Terraform script deploys a basic VPC with two subnets lists as public and private.
