@@ -31,3 +31,39 @@ resource "aws_subnet" "publicsubnet" {
     Subnet = var.publicsubnet
   }
 }
+
+resource "aws_internet_gateway" "igw" {
+  vpc_id = aws_vpc.vpc.id
+
+  tags = {
+    Name = "Mr X Network - IGW"
+  }
+
+}
+
+resource "aws_route_table" "routetable" {
+  vpc_id = aws_vpc.vpc.id
+
+  route {
+    cidr_block = "0.0.0.0/0"
+    gateway_id = aws_internet_gateway.igw.id
+  }
+
+  tags = {
+    Name = "Mr X Route Table"
+  }
+
+
+}
+
+resource "aws_route_table_association" "routetableassociationpublic" {
+  subnet_id      = aws_subnet.publicsubnet.id
+  route_table_id = aws_route_table.routetable.id
+
+}
+
+resource "aws_route_table_association" "routetableassociationprivate" {
+  subnet_id      = aws_subnet.privatesubnet.id
+  route_table_id = aws_route_table.routetable.id
+
+}
