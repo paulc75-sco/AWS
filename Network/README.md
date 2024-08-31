@@ -8,5 +8,5 @@ Resources deployed are:
 -Two subets</br>
 -Internet Gateway</br>
 -NAT Gateway</br>
--Two Route Table</br>
+-Two route tables</br>
 -Two route table assocaitions</br>
