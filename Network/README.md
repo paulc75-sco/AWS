@@ -7,5 +7,6 @@ Resources deployed are:
 -VPC</br>
 -Two subets</br>
 -Internet Gateway</br>
--Route Table</br>
+-NAT Gateway</br>
+-Two Route Table</br>
 -Two route table assocaitions</br>

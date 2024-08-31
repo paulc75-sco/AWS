@@ -9,7 +9,7 @@ variable "subnet" {
 }
 
 
-variable "vpcname" {
+variable "name" {
   default = "Update Name Required"
 
 }
