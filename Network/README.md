@@ -10,3 +10,5 @@ Resources deployed are:
 -NAT gateway</br>
 -Two route tables</br>
 -Two route table assocaitions</br>
+
+![alt text](/images/network.png)</br>
