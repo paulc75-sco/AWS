@@ -1,5 +1,5 @@
-# **AWS - DynamoDB Deployment**
-This Terraform script deploys a DynamoDB with a single table and secondary index:
+# **AWS - S3 Deployment**
+This Terraform script deploys a S3 bucket with the following configurations:
 
 - Public Access Enabled</br>
 - Versioning enabled</br>
