@@ -34,6 +34,25 @@ variable "parameter_group_name" {
 }
 
 variable "skip_final_snapshot" {
-  type = string
   default = "False"
+  type = string
+  
+}
+
+variable "instance_class" {
+    default = "db.t3.micro"
+    type = string
+  
+}
+
+variable "username" {
+    default = null
+    sensitive = true
+  
+}
+
+variable "password" {
+    default = null
+    sensitive = true
+  
 }
