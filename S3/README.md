@@ -13,4 +13,4 @@ The following outputs are configured:
 - Bucket Domain Name</br>
 - Bucket ARN</br>
 
-![alt text](/images/ddb.png)</br>
+![alt text](/images/s3.png)</br>
