@@ -13,7 +13,8 @@ The following outputs are configured:
 - Bucket Domain Name</br>
 - Bucket ARN</br>
 - Bucket Region
-
+</br>
+##Actions Required</br>
 Create a terraform.tfvars file and add the following to the file.  Update <insert value> with your required bucket name
 
 bucketname = "<Insert Value>
