@@ -1,0 +1,11 @@
+digraph G {
+  rankdir = "RL";
+  node [shape = rect, fontname = "sans-serif"];
+  "aws_s3_bucket.s3" [label="aws_s3_bucket.s3"];
+  "aws_s3_bucket_lifecycle_configuration.s3lc" [label="aws_s3_bucket_lifecycle_configuration.s3lc"];
+  "aws_s3_bucket_public_access_block.s3pab" [label="aws_s3_bucket_public_access_block.s3pab"];
+  "aws_s3_bucket_versioning.s3vers" [label="aws_s3_bucket_versioning.s3vers"];
+  "aws_s3_bucket_lifecycle_configuration.s3lc" -> "aws_s3_bucket_versioning.s3vers";
+  "aws_s3_bucket_public_access_block.s3pab" -> "aws_s3_bucket.s3";
+  "aws_s3_bucket_versioning.s3vers" -> "aws_s3_bucket.s3";
+}
