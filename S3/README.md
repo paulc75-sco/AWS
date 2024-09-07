@@ -21,5 +21,5 @@ The following outputs are configured:
 Create a terraform.tfvars file and add the following to the file.  Update <insert value> with your required bucket name
 
 bucketname = "<Insert Value>
-
+</br>
 ![alt text](/images/s3.png)</br>
