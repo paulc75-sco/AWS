@@ -8,7 +8,6 @@ The following outputs are configured:
 
 - Public Ip</br>
 - Public DNS Name</br>
-- 
 </br>
 
 ## Actions Required
