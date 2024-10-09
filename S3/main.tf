@@ -43,19 +43,19 @@ resource "aws_s3_bucket_lifecycle_configuration" "s3lc" {
   rule {
     id = "Mr X Lifecyclepolicy"
     expiration {
-      days = var.expires
+      days = var.days[2]
     }
 
     filter {}
 
     transition {
-      days          = var.standard_ia
-      storage_class = "STANDARD_IA"
+      days          = var.days[0]
+      storage_class = var.storage_class[0]
     }
 
     transition {
-      days          = var.glacier
-      storage_class = "GLACIER"
+      days          = var.days[1]
+      storage_class = var.storage_class[1]
     }
     status = "Enabled"
   }
@@ -69,18 +69,18 @@ resource "aws_s3_bucket_lifecycle_configuration" "s3lc" {
 
     noncurrent_version_expiration {
 
-      noncurrent_days = var.expires
+      noncurrent_days = var.days[2]
     }
 
 
     noncurrent_version_transition {
-      noncurrent_days = var.standard_ia
-      storage_class   = "STANDARD_IA"
+      noncurrent_days = var.days[0]
+      storage_class   = var.storage_class[0]
     }
 
     noncurrent_version_transition {
-      noncurrent_days = var.glacier
-      storage_class   = "GLACIER"
+      noncurrent_days = var.days[1]
+      storage_class   = var.storage_class[1]
     }
 
     status = "Enabled"

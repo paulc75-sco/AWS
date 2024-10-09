@@ -9,8 +9,16 @@ This Terraform script deploys a S3 bucket with the following configurations:
 </br>
 The following outputs are configured:
 
-- Buzcket Name</br>
+- Bucket Name</br>
 - Bucket Domain Name</br>
 - Bucket ARN</br>
+- Bucket Region
+</br>
 
-![alt text](/images/ddb.png)</br>
+## Actions Required
+Create a terraform.tfvars file and add the following to the file.  Update <insert value> with your required bucket name
+
+bucketname = "Insert Value"
+
+</br>
+![alt text](/images/s3.png)</br>

@@ -1,0 +1,5 @@
+digraph G {
+  rankdir = "RL";
+  node [shape = rect, fontname = "sans-serif"];
+  "aws_db_instance.dbinstance" [label="aws_db_instance.dbinstance"];
+}

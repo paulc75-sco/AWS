@@ -3,24 +3,16 @@ variable "bucketname" {
 
 }
 
-variable "bucketid" {
-  default = "Requires Update"
+variable "days" {
+  type    = list(string)
+  default = ["30", "60", "90"]
 
 }
 
-variable "standard_ia" {
-  default = 30
+
+variable "storage_class" {
+  type    = list(string)
+  default = ["STANDARD_IA", "GLACIER"]
 
 }
-
-variable "glacier" {
-  default = 60
-
-}
-
-variable "expires" {
-  default = 90
-
-}
-
 
